@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Packages - Red Dot</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .circle-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .package {
+      width: 120px;
+      height: 120px;
+      border-radius: 9999px;
+      background-color: #dc2626;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+    }
+    .package:hover {
+      transform: scale(1.1);
+      background-color: #b91c1c;
+    }
+  </style>
+</head>
+<body class="bg-white min-h-screen text-center">
+
+  <header class="w-full py-4 bg-red-600 text-white text-xl font-bold">
+    Red Dot - Packages
+  </header>
+
+  <h2 class="mt-6 text-lg text-gray-700">Choose a Package</h2>
+
+  <div class="circle-container">
+    <a href="buy-package.html?amount=500" class="package">Rs. 500</a>
+    <a href="buy-package.html?amount=1000" class="package">Rs. 1000</a>
+    <a href="buy-package.html?amount=1500" class="package">Rs. 1500</a>
+    <a href="buy-package.html?amount=2000" class="package">Rs. 2000</a>
+    <a href="buy-package.html?amount=3000" class="package">Rs. 3000</a>
+    <a href="buy-package.html?amount=4000" class="package">Rs. 4000</a>
+    <a href="buy-package.html?amount=5000" class="package">Rs. 5000</a>
+    <a href="buy-package.html?amount=10000" class="package">Rs. 10000</a>
+  </div>
+
+</body>
+</html>
