@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Events & Updates - Red Dot</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .fade-in {
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 px-4 py-6">
+
+  <header class="w-full py-4 bg-red-600 text-white text-xl font-bold text-center">
+    Red Dot - Events & Updates
+  </header>
+
+  <div class="max-w-xl mx-auto mt-6 fade-in">
+    <h2 class="text-2xl font-bold mb-4 text-red-700">Latest Updates</h2>
+
+    <div class="bg-red-50 p-4 rounded shadow-md mb-4">
+      <h3 class="text-lg font-semibold text-red-600">New Rs. 2000 Package Launched!</h3>
+      <p class="text-sm mt-1">Now earn up to Rs. 300 per day with our new 2000 rupees package. Available in the Packages section.</p>
+    </div>
+
+    <div class="bg-red-50 p-4 rounded shadow-md mb-4">
+      <h3 class="text-lg font-semibold text-red-600">Referral Bonus Increased!</h3>
+      <p class="text-sm mt-1">Refer your friends and get Rs. 300 for every Rs. 1000 package they purchase.</p>
+    </div>
+
+    <div class="bg-red-50 p-4 rounded shadow-md mb-4">
+      <h3 class="text-lg font-semibold text-red-600">Ad Watch Limit Update</h3>
+      <p class="text-sm mt-1">From now, package-based daily ad limits will apply. Make sure to check your package details.</p>
+    </div>
+  </div>
+
+</body>
+</html>
