@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Referral - Red Dot</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-900 min-h-screen flex flex-col items-center justify-center px-4">
+
+  <header class="w-full py-4 bg-red-600 text-white text-xl font-bold text-center">
+    Red Dot - Referral Bonus
+  </header>
+
+  <div class="mt-8 w-full max-w-2xl bg-red-100 p-6 rounded-lg shadow">
+    <h2 class="text-2xl font-bold text-red-700 text-center mb-6">Your Referral Details</h2>
+
+    <div class="mb-6">
+      <p class="text-gray-800 text-lg"><strong>Referral Link:</strong></p>
+      <div class="flex items-center justify-between mt-2">
+        <input id="referralLink" type="text" value="https://reddot.com/signup?ref=yourid" readonly class="w-full p-2 rounded border mr-2 bg-white">
+        <button onclick="copyLink()" class="bg-red-600 text-white px-3 py-2 rounded hover:bg-red-700 transition">Copy</button>
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <h3 class="text-xl font-semibold text-red-600">Referral Bonus Chart:</h3>
+      <ul class="list-disc list-inside mt-2 text-gray-800">
+        <li>Rs. 150 for Rs. 500 Package</li>
+        <li>Rs. 300 for Rs. 1000 Package</li>
+        <li>Rs. 600 for Rs. 2000 Package</li>
+        <li>Rs. 900 for Rs. 3000 Package</li>
+        <li>Rs. 1200 for Rs. 4000 Package</li>
+        <li>Rs. 1500 for Rs. 5000 Package</li>
+        <li>Rs. 3000 for Rs. 10000 Package</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-xl font-semibold text-red-600 mb-2">Your Referred Users</h3>
+      <table class="w-full text-left bg-white border rounded">
+        <thead>
+          <tr class="bg-red-200">
+            <th class="p-2">Name</th>
+            <th class="p-2">Deposit</th>
+            <th class="p-2">Bonus Earned</th>
+          </tr>
+        </thead>
+        <tbody id="referralTable">
+          <tr>
+            <td class="p-2">Ali</td>
+            <td class="p-2">Rs. 1000</td>
+            <td class="p-2">Rs. 300</td>
+          </tr>
+          <tr>
+            <td class="p-2">Usman</td>
+            <td class="p-2">Rs. 500</td>
+            <td class="p-2">Rs. 150</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    function copyLink() {
+      const link = document.getElementById('referralLink');
+      link.select();
+      document.execCommand('copy');
+      alert('Referral link copied!');
+    }
+  </script>
+
+</body>
+</html>
