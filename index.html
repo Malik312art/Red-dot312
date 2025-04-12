@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Red Dot - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .spin-circle {
+      animation: spin 5s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Header/Navbar -->
+  <header class="bg-red-600 text-white py-4 px-6 flex justify-between items-center shadow-md">
+    <h1 class="text-2xl font-bold">Red Dot</h1>
+    <nav class="space-x-4 text-sm">
+      <a href="profile.html" class="hover:underline">Profile</a>
+      <a href="wallet.html" class="hover:underline">Wallet</a>
+      <a href="packages.html" class="hover:underline">Packages</a>
+      <a href="referral.html" class="hover:underline">Referral</a>
+    </nav>
+  </header>
+
+  <!-- Spinning Red Dot -->
+  <main class="flex flex-col items-center justify-center py-12">
+    <div class="w-40 h-40 rounded-full border-8 border-red-600 flex items-center justify-center spin-circle">
+      <span class="text-lg font-bold text-red-600">Red Dot</span>
+    </div>
+    <p class="mt-6 text-gray-600">Welcome to Red Dot — Watch ads & earn daily!</p>
+  </main>
+
+  <!-- Events Section -->
+  <section class="bg-gray-100 py-6 px-4">
+    <h2 class="text-xl font-semibold mb-4 text-red-600">Upcoming Events</h2>
+    <ul class="space-y-2 text-sm">
+      <li>- Lucky Draw: 20 April 2025</li>
+      <li>- New Ad Campaign: Starts 15 April</li>
+      <li>- Referral Contest: Ends 30 April</li>
+    </ul>
+  </section>
+
+</body>
+</html>
